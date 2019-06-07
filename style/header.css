@@ -1,3 +1,24 @@
+/* mobile */
 h1 {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
+
+.container, header, .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h4, a, span {
+    text-align: center;
+}
+
+.help-desk {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
