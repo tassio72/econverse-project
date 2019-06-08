@@ -7,6 +7,7 @@
     <!--Style-->
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
     <!-- helpers -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -61,37 +62,48 @@
                
             </nav>
 
-            <div class="banner">
-                <ul class="slider">
-                    <li>
-                        <input type="radio" id="slide1" name="slide" checked>
-                        <label for="slide1"></label>
-                        <img src="img/banner.png" />
-                    </li>
-                    <li>
-                        <input type="radio" id="slide2" name="slide">
-                        <label for="slide2"></label>
-                        <img src="img/banner.png" />
-                    </li>
-                    <li>
-                        <input type="radio" id="slide3" name="slide">
-                        <label for="slide3"></label>
-                        <img src="img/banner.png" />
-                    </li>
-                    <li>
-                        <input type="radio" id="slide4" name="slide">
-                        <label for="slide4"></label>
-                        <img src="img/banner.png" />
-                    </li>
-                </ul>
+            <div class="banner"> 
 
+                <div class="slider slider-1" id="slider-1">
+                        
+                    <img src="img/banner.png" />
+                  
+                </div>
+                <div class=" slider slider-2" id="slider-2" >
+                    
+                    <img src="img/banner.png" />
+                </div>
+                <div class=" slider slider-3" id="slider-3">
+                    
+                    <img src="img/banner.png" />
+                </div>
+                <div class=" slider slider-4" id="slider-4">
+                    <img src="img/banner.png" />
+                    
+                </div>
 
-            </div>
+                <div class="slider-check">          
+                    <a href="#slider-1"> <span>•</span></a>
+                    <a href="#slider-2"> <span>•</span></a>
+                    <a href="#slider-3"> <span>•</span></a>
+                    <a href="#slider-4"> <span>•</span></a>
+                </div>
+
+            </div><!--banner -->
         </header>
-
         <!-- HEADER -->
+
+        <main>
+
+        </main>
+        <!-- MAIN -->
+
 
 
     </div>
+
+    <script>
+            window.location = "#slider-1";
+    </script>
 </body>
 </html>
