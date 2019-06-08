@@ -37,8 +37,8 @@ header {
     justify-content: space-around;
 }
 
-.help-desk h4 {
-    font-size: 0.86773rem;
+.help-desk h4, .helper-search, .helper-bag, .helper-person{
+    font-size: 0.77873rem;
 }
 
 .helper {
@@ -58,7 +58,6 @@ header {
 
 .helper-search, .helper-bag, .helper-person {
     height: 100%;
-    font-size: 0.77873rem;
 }
 
 .log {
@@ -94,6 +93,7 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 27px;
 }
 
 nav {
@@ -125,6 +125,68 @@ nav {
     color: rgb(255, 255, 255);
 }
 
+/* banner */
+.banner {
+    width: 100%;
+}
+.slider {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+    
+.slider li {
+    position: absolute;
+}
+    
+.slider img {
+    height: 100%;
+    width: 100%;
+} 
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #676e81;
+    bottom: 4.7619%;
+    margin: 0% 4px;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 47.3333%;
+}
+
+.slider li:nth-child(2) label {
+    left: 49.037%;
+}
+
+.slider li:nth-child(3) label {
+   left: 50.7407%;
+} 
+
+.slider li:nth-child(4) label {
+    left: 52.5925%;
+} 
+
+.slider img {
+   opacity: 0;
+   visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+   opacity: 1;
+   visibility: visible;
+   z-index: 10;
+} 
 /* above table */
 @media(min-width: 768px) {
     
