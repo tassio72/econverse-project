@@ -1,7 +1,7 @@
 /* mobile-first*/
 
 /* benefits */
-.benefits, .benefits-list, .benefits-list-item {
+.benefits, .benefits-list, .benefits-list-item, main{
     width: 100%;
 }
 
@@ -16,6 +16,10 @@
 .benefits-list-item {
     justify-content: center;
     margin: 20.5px 0%;
+}
+
+.benefits-list-item img {
+    height: 40px;   
 }
 
 .benefits-list-item a { 
@@ -43,6 +47,17 @@
 }
 
 /* main */
+
+.styles, .styles-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.styles-item img {
+    width: 100%;
+    max-width: 339px;
+}
 
 /* above table */
 @media(min-width: 768px) {

@@ -97,13 +97,12 @@ header {
 }
 
 nav {
-    /* display: flex; */
     display: none;
     position: absolute;
     flex-direction: column;
     top: 5%;
     left: 0;
-    z-index: 100px;
+    z-index: 100;
     background: rgba(55, 55, 55, 0.9);
     width: 90%;
     max-width: 400px;
