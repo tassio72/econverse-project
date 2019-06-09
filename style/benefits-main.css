@@ -49,14 +49,49 @@
 /* main */
 
 .styles, .styles-item {
-    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.styles {
+    width: 100%;
+
+}
+
+.styles-item {
+    margin: 0% 0.74074%;
 }
 
 .styles-item img {
     width: 100%;
-    max-width: 339px;
+    max-width: 340px;
+    margin: 20.5px 0 18px;
+}
+
+.styles-item a {
+    width: 100%;
+}
+
+.styles-item a h3 {
+    max-height: 18px;
+    font-size: 1.15rem;
+    margin-bottom: 33px;
+}
+
+.btn-styles {
+    width: 134px;
+    height: 55px;
+    margin: 0px auto 31px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+}
+
+.btn-styles p {
+    margin: auto;
+    height: 10px;
+    font-size: 0.793rem;
 }
 
 /* above table */
@@ -69,6 +104,11 @@
     .benefits-list-item {
         width: 45%;
     }
+
+    .styles {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 /* laptop */
@@ -76,4 +116,6 @@
     .benefits-list {
         flex-flow: initial;
     }
+
+    
 }
