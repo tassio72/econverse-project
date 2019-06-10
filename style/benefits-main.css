@@ -94,6 +94,132 @@
     font-size: 0.793rem;
 }
 
+
+/* slider brands*/
+
+.brands {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 77px;
+}
+
+.brands-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90.5185%;
+    overflow: hidden;
+    position: relative;
+}
+
+.brands-list-item img {
+    width: 55%;
+    margin: 1px 0% 1px;
+}
+
+.brands-list li{
+    display: none;
+}
+
+.brands-list li.active-brand {
+    display: inline-block;
+}
+
+.btn-click {
+    width: 27px;
+    height: 50px;
+}
+
+.btn-brands {
+    opacity: 0.3;
+}
+
+/* slider news */
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+.news-navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.news-navbar h2 {
+    height: 18px;
+    font-size: 1.343rem;
+    margin-bottom: 20px;
+}
+
+.news-navbar-itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.active-border {
+    border-bottom: 1px solid #000;
+}
+
+.news-navbar-item {
+    width: 25%;
+    text-align: center;
+}
+
+.news-navbar-item h3 {
+    height: 16px;
+    font-size: 0.8125rem;
+    cursor: pointer;
+}
+
+.news-options {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 74px;
+}
+.news-art {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90.5185%;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-art-item {
+    display: none;
+}
+
+.news-art-item img {
+    position: relative;
+}
+
+.news-art-item span {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.active-new {
+    display: inline-block;
+}
+
+
+
 /* above table */
 @media(min-width: 768px) {
     .benefits-list {
@@ -109,6 +235,7 @@
         flex-direction: row;
         justify-content: center;
     }
+
 }
 
 /* laptop */
@@ -117,5 +244,8 @@
         flex-flow: initial;
     }
 
+    .brands-list-item img {
+        width: initial;
+    }
     
 }
