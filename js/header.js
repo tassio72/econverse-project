@@ -1,9 +1,25 @@
 // navbar menu
+
+const btnNav = $('.navbar')
+
 $('.btn-nav').on('click', function(){
-  $('.navbar').css('display', 'flex')
+  btnNav.css('display', 'flex')
 })
 
 $('.btn-close').on('click', function(){
-  var te = $('.navbar').css('display', 'none')
+  btnNav.css('display', 'none')
 })
+
+// search-input 
+
+const helperSearch = $('.helper-field-search')
+
+$('.helper-search').on('click', function(){
+  helperSearch.css('display', 'inline')
+})
+
+$('.btn-close-search').on('click', function(){
+  helperSearch.css('display', 'none')
+})
+
 

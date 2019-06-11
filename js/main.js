@@ -34,16 +34,19 @@ $('.news-navbar-item').on('click', function(event){
 
 // slider news
 $(function() {
-  var width = (parseInt($('.news-art-item').outerWidth() + parseInt($('.news-art-item').css('margin-right')))) * $('.news-art-item').length
+
+  const carousel = $('.news-art-item');
+
+  let width = (parseInt(carousel.outerWidth() + parseInt(carousel.css('margin-right')))) * carousel.length
 
   $('.news-art').css('width', width);
 
-  var numImg = 3;
-  var marginPaddin = 1.438;
+  let numImg = 3;
+  let marginPaddin = 1.438;
 
-  var ident = 0;
-  var count = ($('.news-art-item').length / numImg) - 1;
-  var slide = (numImg * marginPaddin) + ($('.news-art-item').outerWidth() * numImg)
+  let ident = 0;
+  let count = (carousel.length / numImg);
+  let slide = (numImg * marginPaddin) + (carousel.outerWidth() * numImg)
 
   $('.next-new').on('click', function() {
     if (ident < count) {
@@ -53,7 +56,8 @@ $(function() {
   })
 
   $('.prev-new').on('click', function() {
-    if (ident >= 1) {
+    
+    if (ident >= -1) {
       ident--;
       $('.news-art').animate({'margin-left': '+=' + slide + 'px'}, '500')
     }

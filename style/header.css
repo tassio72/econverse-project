@@ -41,13 +41,36 @@ header {
     font-size: 0.77873rem;
 }
 
+
 .helper {
     align-items: center;
     justify-content: space-between;
     height: 20px;
     width: 244px;
     margin: 36px 0%;
+    position: relative;
 }
+
+.helper-field-search {
+    position: absolute;
+    left: 0%;
+    bottom: -25px;
+    border-radius: 4px;
+    width: 100%;
+    height: 20px;
+    border: none;
+    background: #424242;
+    color: #fff;
+}
+
+.btn-close-search{
+    position: absolute;
+    bottom: -115%;
+    right: 1%;
+    color: #fff;
+}
+
+
 
 .helper-bag {
     display: flex;
