@@ -52,6 +52,7 @@ header {
 }
 
 .helper-field-search {
+    display: none;
     position: absolute;
     left: 0%;
     bottom: -25px;
@@ -62,6 +63,8 @@ header {
     background: #424242;
     color: #fff;
 }
+
+
 
 .btn-close-search{
     position: absolute;
@@ -180,13 +183,10 @@ nav {
     justify-content: space-between;
 }
 
-input {
-    display: none;
-}
-
 .slider-check span{
     visibility: hidden;
 }
+
 .slider-check a {
     background-color: #676e81;
     cursor: pointer;
@@ -213,6 +213,16 @@ input {
     .menu {
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .helper-field-search {
+        height: 40px;
+        bottom: -230%;
+    }
+
+    .btn-close-search {
+        bottom: -170%;
+        right: 2%;
     }
 
     nav {
